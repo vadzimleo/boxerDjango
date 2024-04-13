@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{%  block title %}Set an Appointment to vadzimleo' Class{% endblock %}
+
+{% block meta_description %}{% endblock %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="breadcrumb--con">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i>Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Set Appointment<li>
+                    </ol> 
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<center>
+    <h1>Appointment</h1><br>
+    <h3>Review Your information</h3>
+    <p><strong>Student' Name </strong>: {{ name }}</p>
+    <p><strong>Phone Number </strong>: {{ phone_number }}</p>
+    <p><strong>email</strong>: {{ email }}</p>
+    <p>{{ message }}</p>
+    <p><strong>Your Schedule</strong>: {{ your_schedule }}</p>
+    <p><strong>Your Date</strong>: {{ your_date }}</p><br><br><br>
+    <strong>Note! </strong> We will contact You prior to date
+</center>
+<br><br>
+
+{% endblock content %}
